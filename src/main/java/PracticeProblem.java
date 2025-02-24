@@ -1,6 +1,7 @@
 public class PracticeProblem {
 
 	public static void main(String args[]) {
+		createIntArray();
 	}
 
 	public static int[] createIntArray() {
@@ -29,10 +30,10 @@ public class PracticeProblem {
 		int count = 0;
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i].equals(find)) {
+				count++;
 				if (count == 3) {
 					return i;
 				}
-				count++;
 			}
 		}
 		return -1;
